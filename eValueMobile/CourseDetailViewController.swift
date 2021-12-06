@@ -12,7 +12,9 @@ class CourseDetailViewController: UIViewController {
     @IBOutlet weak var courseNameTextField: UITextField!
     @IBOutlet weak var professorTextField: UITextField!
     @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var cancelBarButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var saveBarButton: UIBarButtonItem!
     
     var course: Course!
     var reviews: Reviews!
@@ -28,10 +30,25 @@ class CourseDetailViewController: UIViewController {
         tableView.dataSource = self
         if course == nil {
             course = Course()
+        } else {
+            disableTextEditing()
+            saveBarButton.hide()
         }
         reviews = Reviews()
         updateUserInterface()
     }
+    
+    func disableTextEditing(){
+        courseIDTextField.isEnabled = false
+        courseNameTextField.isEnabled = false
+        professorTextField.isEnabled = false
+        ratingLabel.isEnabled = false
+//        ratingLabel.backgroundColor = .clear
+        courseIDTextField.borderStyle = .none
+        courseNameTextField.borderStyle = .none
+        professorTextField.borderStyle = .none
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -91,7 +108,7 @@ class CourseDetailViewController: UIViewController {
     
     func saveCancelAlert(title: String, message: String, segueIdentifier: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle:  .alert)
-        let saveAction = UIAlertAction(title: "save", style: .default) { (_) in
+        let saveAction = UIAlertAction(title: "Save", style: .default) { (_) in
             self.course.saveData { (success) in
                 self.performSegue(withIdentifier: segueIdentifier, sender: nil)
             }

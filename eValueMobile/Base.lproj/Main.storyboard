@@ -147,7 +147,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esR-u3-L0Y">
                                 <rect key="frame" x="0.0" y="88" width="414" height="180"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CourseID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-0A-aSI">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CourseID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-0A-aSI">
                                         <rect key="frame" x="8" y="8" width="398" height="33"/>
                                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -176,7 +176,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CourseName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fau-8f-jyA">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CourseName" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fau-8f-jyA">
                                         <rect key="frame" x="8" y="49" width="398" height="34"/>
                                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -186,7 +186,7 @@
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Professor Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGA-AI-9ZD">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Professor Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGA-AI-9ZD">
                                         <rect key="frame" x="8" y="91" width="398" height="34"/>
                                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -330,10 +330,12 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="cancelBarButton" destination="hBK-5c-7wn" id="IuL-QP-e6i"/>
                         <outlet property="courseIDTextField" destination="9Qc-0A-aSI" id="CJD-dC-XAE"/>
                         <outlet property="courseNameTextField" destination="fau-8f-jyA" id="oLr-cm-SUc"/>
                         <outlet property="professorTextField" destination="HGA-AI-9ZD" id="5AA-Vh-Pzh"/>
                         <outlet property="ratingLabel" destination="J6Y-NS-7gw" id="J8Z-UW-IoH"/>
+                        <outlet property="saveBarButton" destination="vX2-60-YNH" id="c1q-Up-xcW"/>
                         <outlet property="tableView" destination="2Nm-XQ-Iyh" id="de8-zg-VPe"/>
                         <segue destination="GDI-w8-0oh" kind="presentation" identifier="AddReview" modalPresentationStyle="fullScreen" id="5lN-kk-hCd"/>
                     </connections>
@@ -610,7 +612,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qV8-aQ-PdK"/>
+        <segue reference="BnG-ad-SAP"/>
         <segue reference="FZw-Xq-CLq"/>
     </inferredMetricsTieBreakers>
     <resources>

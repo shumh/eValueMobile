@@ -92,10 +92,25 @@ class ReviewTableViewController: UITableViewController {
     @IBAction func reviewTitleChanged(_ sender: UITextField) {
     }
     @IBAction func reviewTitleDonePressed(_ sender: UITextField) {
+        // prevent a title of blank spaces from being saved too
+        let noSpaces = reviewTitleField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if noSpaces !=  "" {
+            saveBarButton.isEnabled = true
+        } else {
+            saveBarButton.isEnabled = false
+        }
     }
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
+        review.deleteData(course: course) { (success) in
+            if success {
+                self.leaveViewController()
+            } else {
+                print("Delete unsuccessful")
+            }
+        }
     }
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
+        leaveViewController()
     }
     @IBAction func saveButtonPressed(_ sender: Any) {
         updateFromUserInterface()
