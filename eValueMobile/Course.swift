@@ -10,6 +10,7 @@ import Firebase
 
 class Course {
     var courseID: String
+    var courseName: String
     var professorName: String
     var averageRating: Double
     var numberOfReviews: Int
@@ -17,11 +18,12 @@ class Course {
     var documentID: String
     
     var dictionary: [String: Any] {
-        return ["courseID": courseID, "professorName":professorName, "averageRating":averageRating, "numberOfReviews": numberOfReviews, "postingUserID": postingUserID, "documentID": documentID]
+        return ["courseID": courseID, "courseName": courseName, "professorName":professorName, "averageRating":averageRating, "numberOfReviews": numberOfReviews, "postingUserID": postingUserID, "documentID": documentID]
     }
     
-    init(courseID: String, professorName: String, averageRating: Double, numberOfReviews: Int, postingUserID: String, documentID: String) {
+    init(courseID: String, courseName: String, professorName: String, averageRating: Double, numberOfReviews: Int, postingUserID: String, documentID: String) {
         self.courseID = courseID
+        self.courseName = courseName
         self.professorName = professorName
         self.averageRating = averageRating
         self.numberOfReviews = numberOfReviews
@@ -30,16 +32,17 @@ class Course {
     }
     
     convenience init() {
-        self.init(courseID: "", professorName: "", averageRating: 0.0, numberOfReviews: 0, postingUserID: "", documentID: "")
+        self.init(courseID: "Course ID", courseName: "Course Name", professorName: "Professor Name", averageRating: 0.0, numberOfReviews: 0, postingUserID: "", documentID: "")
     }
     
     convenience init(dictionary: [String: Any]){
         let courseID = dictionary["courseID"] as! String? ?? ""
+        let courseName = dictionary["courseName"] as! String? ?? ""
         let professorName = dictionary["professorName"] as! String? ?? ""
         let averageRating = dictionary["averageRating"] as! Double? ?? 0.0
         let numberOfReviews = dictionary["numberOfReviews"] as! Int? ?? 0
         let postingUserID = dictionary["postingUserID"] as! String? ?? ""
-        self.init(courseID: courseID, professorName: professorName, averageRating: averageRating, numberOfReviews: numberOfReviews, postingUserID: postingUserID, documentID: "")
+        self.init(courseID: courseID, courseName: courseName, professorName: professorName, averageRating: averageRating, numberOfReviews: numberOfReviews, postingUserID: postingUserID, documentID: "")
     }
     
     func saveData(completion: @escaping (Bool) -> ()) {

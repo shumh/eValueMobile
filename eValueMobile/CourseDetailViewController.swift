@@ -8,7 +8,8 @@
 import UIKit
 
 class CourseDetailViewController: UIViewController {
-    @IBOutlet weak var courseTextField: UITextField!
+    @IBOutlet weak var courseIDTextField: UITextField!
+    @IBOutlet weak var courseNameTextField: UITextField!
     @IBOutlet weak var professorTextField: UITextField!
     @IBOutlet weak var ratingLabel: UILabel!
     
@@ -23,13 +24,15 @@ class CourseDetailViewController: UIViewController {
     }
     
     func updateUserInterface() {
-        courseTextField.text = course.courseID
+        courseIDTextField.text = course.courseID
+        courseNameTextField.text = course.courseName
         professorTextField.text = course.professorName
         
     }
     
     func updateFromInterface() {
-        course.courseID = courseTextField.text!
+        course.courseID = courseIDTextField.text!
+        course.courseName = courseNameTextField.text!
         course.professorName = professorTextField.text!
     }
     

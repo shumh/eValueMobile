@@ -41,39 +41,39 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="50" id="Sry-Wf-frf" customClass="CourseTableViewCell" customModule="eValueMobile" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="70" id="Sry-Wf-frf" customClass="CourseTableViewCell" customModule="eValueMobile" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sry-Wf-frf" id="GpF-1d-2rm">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISYS2160" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCe-Z2-GZ9">
-                                                    <rect key="frame" x="11" y="7" width="119" height="36"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISYS2160" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCe-Z2-GZ9">
+                                                    <rect key="frame" x="11" y="5" width="240" height="60"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="119" id="oxQ-vU-UF6"/>
+                                                        <constraint firstAttribute="width" constant="240" id="z3P-Z7-9VW"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Professor John Gallaugher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vur-xW-DQk">
-                                                    <rect key="frame" x="146" y="7" width="257" height="36"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Gallaugher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vur-xW-DQk">
+                                                    <rect key="frame" x="273" y="5" width="130" height="60"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="257" id="4Hr-AZ-qmL"/>
+                                                        <constraint firstAttribute="width" constant="130" id="i13-DX-0LP"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="vur-xW-DQk" secondAttribute="bottom" constant="5" id="CMK-Jm-qpD"/>
                                                 <constraint firstItem="kCe-Z2-GZ9" firstAttribute="leading" secondItem="GpF-1d-2rm" secondAttribute="leading" constant="11" id="DR6-4Q-mSG"/>
-                                                <constraint firstAttribute="bottom" secondItem="vur-xW-DQk" secondAttribute="bottom" constant="7" id="gZA-vY-BzO"/>
-                                                <constraint firstItem="kCe-Z2-GZ9" firstAttribute="top" secondItem="GpF-1d-2rm" secondAttribute="top" constant="7" id="jcZ-Od-lDj"/>
-                                                <constraint firstItem="vur-xW-DQk" firstAttribute="top" secondItem="GpF-1d-2rm" secondAttribute="top" constant="7" id="mZ0-AC-Vzf"/>
-                                                <constraint firstAttribute="bottom" secondItem="kCe-Z2-GZ9" secondAttribute="bottom" constant="7" id="svP-bL-Tb8"/>
+                                                <constraint firstItem="kCe-Z2-GZ9" firstAttribute="top" secondItem="GpF-1d-2rm" secondAttribute="top" constant="5" id="eiI-z3-89e"/>
+                                                <constraint firstItem="vur-xW-DQk" firstAttribute="top" secondItem="GpF-1d-2rm" secondAttribute="top" constant="5" id="qug-uP-hjj"/>
                                                 <constraint firstAttribute="trailing" secondItem="vur-xW-DQk" secondAttribute="trailing" constant="11" id="x1Y-tR-3eE"/>
+                                                <constraint firstAttribute="bottom" secondItem="kCe-Z2-GZ9" secondAttribute="bottom" constant="5" id="yt7-yw-oGs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -106,6 +106,9 @@
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sortSegmentPressed:" destination="5k6-tx-Lb0" eventType="valueChanged" id="6TL-MV-G23"/>
+                                </connections>
                             </segmentedControl>
                         </barButtonItem>
                     </toolbarItems>
@@ -150,16 +153,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="BpC-In-Az8"/>
                                         </constraints>
-                                        <color key="textColor" red="0.41037786009999999" green="0.11383850130000001" blue="0.12547937040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" name="PrimaryColor"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Professor Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGA-AI-9ZD">
-                                        <rect key="frame" x="8" y="43" width="398" height="17"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="17" id="UdS-Vh-mVM"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IwC-eW-gmK">
@@ -204,22 +199,43 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CourseName" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fau-8f-jyA">
+                                        <rect key="frame" x="8" y="49" width="398" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Iiq-Ey-Ea8"/>
+                                        </constraints>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Professor Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGA-AI-9ZD">
+                                        <rect key="frame" x="8" y="91" width="398" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="fvA-ZR-JIJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="9Qc-0A-aSI" secondAttribute="trailing" constant="8" id="3y7-aZ-dKt"/>
-                                    <constraint firstItem="HGA-AI-9ZD" firstAttribute="top" secondItem="9Qc-0A-aSI" secondAttribute="bottom" constant="2" id="5HW-IU-q3x"/>
                                     <constraint firstItem="T5N-tW-Xio" firstAttribute="top" secondItem="IwC-eW-gmK" secondAttribute="bottom" constant="8" id="AO4-ay-pFs"/>
                                     <constraint firstItem="T5N-tW-Xio" firstAttribute="leading" secondItem="esR-u3-L0Y" secondAttribute="leading" constant="8" id="DfM-QU-Ozr"/>
                                     <constraint firstItem="IwC-eW-gmK" firstAttribute="top" secondItem="esR-u3-L0Y" secondAttribute="top" constant="242" id="GM4-oY-QS4"/>
+                                    <constraint firstItem="fau-8f-jyA" firstAttribute="top" secondItem="9Qc-0A-aSI" secondAttribute="bottom" constant="8" id="GNE-YX-IcE"/>
+                                    <constraint firstItem="HGA-AI-9ZD" firstAttribute="top" secondItem="fau-8f-jyA" secondAttribute="bottom" constant="8" id="Hpt-cv-tgg"/>
                                     <constraint firstItem="J6Y-NS-7gw" firstAttribute="leading" secondItem="T5N-tW-Xio" secondAttribute="trailing" id="MN5-Jw-UnU"/>
+                                    <constraint firstAttribute="trailing" secondItem="HGA-AI-9ZD" secondAttribute="trailing" constant="8" id="NJc-cS-ru7"/>
                                     <constraint firstItem="J6Y-NS-7gw" firstAttribute="top" secondItem="IwC-eW-gmK" secondAttribute="bottom" constant="6" id="RSu-Ip-W5l"/>
-                                    <constraint firstItem="HGA-AI-9ZD" firstAttribute="leading" secondItem="esR-u3-L0Y" secondAttribute="leading" constant="8" id="RmF-Ol-vf9"/>
+                                    <constraint firstAttribute="trailing" secondItem="fau-8f-jyA" secondAttribute="trailing" constant="8" id="Rbb-Yx-JMB"/>
                                     <constraint firstAttribute="height" constant="380" id="SZW-G3-EZz"/>
                                     <constraint firstAttribute="trailing" secondItem="IwC-eW-gmK" secondAttribute="trailing" id="UUa-Du-CEg"/>
                                     <constraint firstAttribute="trailing" secondItem="HGA-AI-9ZD" secondAttribute="trailing" constant="8" id="W6G-Gp-Y4S"/>
                                     <constraint firstItem="IwC-eW-gmK" firstAttribute="leading" secondItem="esR-u3-L0Y" secondAttribute="leading" id="c14-BK-ueu"/>
+                                    <constraint firstItem="HGA-AI-9ZD" firstAttribute="leading" secondItem="esR-u3-L0Y" secondAttribute="leading" constant="8" id="hwm-ZM-EaU"/>
                                     <constraint firstItem="9Qc-0A-aSI" firstAttribute="top" secondItem="esR-u3-L0Y" secondAttribute="top" constant="8" id="uf3-gB-Boa"/>
+                                    <constraint firstItem="fau-8f-jyA" firstAttribute="leading" secondItem="esR-u3-L0Y" secondAttribute="leading" constant="8" id="ui2-qA-vZL"/>
                                     <constraint firstItem="9Qc-0A-aSI" firstAttribute="leading" secondItem="esR-u3-L0Y" secondAttribute="leading" constant="8" id="wa4-73-4X5"/>
                                 </constraints>
                             </view>
@@ -254,7 +270,8 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="courseTextField" destination="9Qc-0A-aSI" id="CJD-dC-XAE"/>
+                        <outlet property="courseIDTextField" destination="9Qc-0A-aSI" id="CJD-dC-XAE"/>
+                        <outlet property="courseNameTextField" destination="fau-8f-jyA" id="oLr-cm-SUc"/>
                         <outlet property="professorTextField" destination="HGA-AI-9ZD" id="5AA-Vh-Pzh"/>
                         <outlet property="ratingLabel" destination="J6Y-NS-7gw" id="J8Z-UW-IoH"/>
                     </connections>
