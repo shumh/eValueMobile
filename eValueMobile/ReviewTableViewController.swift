@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ReviewTableViewController: UITableViewController {
     @IBOutlet weak var cancelBarButton: UIBarButtonItem!
@@ -21,6 +22,7 @@ class ReviewTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         guard course != nil else {
             print("ERROR: No course passed")
             return
@@ -28,48 +30,54 @@ class ReviewTableViewController: UITableViewController {
         if review == nil {
              review = Review()
         }
+        ratingLabel.text = "\(Int(slider.value))"
         updateUserInterface()
 
     }
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
-        let currentValue = Int(sender.value)
-        ratingLabel.text = "\(currentValue)"
+        ratingLabel.text = "\(Int(slider.value))"
     }
     
     func updateUserInterface() {
         reviewTitleField.text = review.title
         reviewTextView.text = review.text
-//        rating = review.rating
+        slider.value = Float(review.rating)
+        ratingLabel.text = "\(Int(slider.value))"
 //        reviewDateLabel.text = "posted: \(dateFormatter.string(from: review.date))"
-//        if review.documentID == "" { // this is a new review
-//            addBordersToEditableObjects()
-//        } else {
-//            if review.reviewUserID == Auth.auth().currentUser?.uid { //posted by current user
-//                self.navigationItem.leftItemsSupplementBackButton = false
-//                saveBarButton.title = "Update"
-//                addBordersToEditableObjects()
-//                deleteButton.isHidden = false
-//            } else { // posted by different user
-//                saveBarButton.hide()
-//                cancelBarButton.hide()
-//                postedByLabel.text = "Posted by: \(review.reviewUserEmail)"
-//                for starButton in starButtonCollection {
-//                    starButton.backgroundColor = .white
-//                    starButton.isEnabled = false
-//                }
-//                reviewTitleField.isEnabled = false
-//                reviewTitleField.borderStyle = .none
-//                reviewTextView.isEditable = false
-//                reviewTitleField.backgroundColor = .white
-//                reviewTextView.backgroundColor = .white
-//            }
-//        }
+        if review.documentID == "" { // this is a new review
+            addBordersToEditableObjects()
+        } else {
+            if review.reviewUserID == Auth.auth().currentUser?.uid { //posted by current user
+                self.navigationItem.leftItemsSupplementBackButton = false
+                saveBarButton.title = "Update"
+                addBordersToEditableObjects()
+                deleteButton.isHidden = false
+            } else { // posted by different user
+                saveBarButton.hide()
+                cancelBarButton.hide()
+                self.navigationController!.navigationBar.tintColor = UIColor.white
+                reviewTitleField.isEnabled = false
+                reviewTitleField.borderStyle = .none
+                reviewTextView.isEditable = false
+                reviewTitleField.backgroundColor = .white
+                reviewTextView.backgroundColor = .white
+                slider.backgroundColor = .white
+                slider.isEnabled = false
+            }
+        }
+    }
+    
+    func addBordersToEditableObjects() {
+        reviewTitleField.addBorder(width: 0.5, radius: 5.0, color: .black)
+        reviewTextView.addBorder(width: 0.5, radius: 5.0, color: .black)
+        slider.addBorder(width: 0.5, radius: 5.0, color: .black)
     }
     
     func updateFromUserInterface() {
         review.title = reviewTitleField.text!
         review.text = reviewTextView.text!
+        review.rating = Int(slider.value)
     }
     
     func leaveViewController() {

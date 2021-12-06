@@ -33,6 +33,13 @@ class CourseDetailViewController: UIViewController {
         updateUserInterface()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reviews.loadData(course: course) {
+            self.tableView.reloadData()
+        }
+    }
+    
     func updateUserInterface() {
         courseIDTextField.text = course.courseID
         courseNameTextField.text = course.courseName
@@ -74,6 +81,19 @@ class CourseDetailViewController: UIViewController {
         }
     }
     
+    func saveCancelAlert(title: String, message: String, segueIdentifier: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle:  .alert)
+        let saveAction = UIAlertAction(title: "save", style: .default) { (_) in
+            self.course.saveData { (success) in
+                self.performSegue(withIdentifier: segueIdentifier, sender: nil)
+            }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
         updateFromInterface()
         course.saveData { (success) in
@@ -95,8 +115,11 @@ class CourseDetailViewController: UIViewController {
     }
     
     @IBAction func reviewButtonPressed(_ sender: UIButton) {
-        // check if spot was saved. if not saved, save it and segue if save was successful. Otherwise, if it was saved successfully, segue as below:
-        performSegue(withIdentifier: "AddReview", sender: nil)
+        if course.documentID == "" {
+            saveCancelAlert(title: "This Course Has Not Been Saved", message: "You must save this course before you can review it", segueIdentifier: "AddReview")
+        } else {
+            performSegue(withIdentifier: "AddReview", sender: nil)
+        }
     }
     
 }
@@ -107,8 +130,8 @@ extension CourseDetailViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath)
-        // update custom tableviewcell ehre
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! CourseReviewTableViewCell
+        cell.review = reviews.reviewArray[indexPath.row]
         return cell
     }
     

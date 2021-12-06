@@ -23,6 +23,9 @@
 		5C107604275DEC120033A86A /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C107603275DEC120033A86A /* ReviewTableViewController.swift */; };
 		5C107606275DF8AA0033A86A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C107605275DF8AA0033A86A /* Review.swift */; };
 		5C107608275DFA3D0033A86A /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C107607275DFA3D0033A86A /* Reviews.swift */; };
+		5C10760A275E07F60033A86A /* CourseReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C107609275E07F60033A86A /* CourseReviewTableViewCell.swift */; };
+		5C10760C275E15A50033A86A /* UIBarButtonItem+hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10760B275E15A50033A86A /* UIBarButtonItem+hide.swift */; };
+		5C10760E275E16000033A86A /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10760D275E16000033A86A /* UIView+addBorder.swift */; };
 		BC655428C8892F3AF367F8B9 /* Pods_eValueMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAAC87281755762D812BB5A /* Pods_eValueMobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		5C107603275DEC120033A86A /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		5C107605275DF8AA0033A86A /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		5C107607275DFA3D0033A86A /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		5C107609275E07F60033A86A /* CourseReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseReviewTableViewCell.swift; sourceTree = "<group>"; };
+		5C10760B275E15A50033A86A /* UIBarButtonItem+hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+hide.swift"; sourceTree = "<group>"; };
+		5C10760D275E16000033A86A /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
 		7B4D0AB13E87F2DD789A7CA6 /* Pods-eValueMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eValueMobile.release.xcconfig"; path = "Target Support Files/Pods-eValueMobile/Pods-eValueMobile.release.xcconfig"; sourceTree = "<group>"; };
 		ACAAC87281755762D812BB5A /* Pods_eValueMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eValueMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8FB147A3EB6C270C7CCBCF /* Pods-eValueMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eValueMobile.debug.xcconfig"; path = "Target Support Files/Pods-eValueMobile/Pods-eValueMobile.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,9 +98,12 @@
 				5C1075E5275D726D0033A86A /* LoginViewController.swift */,
 				5C1075F7275D77700033A86A /* CourseListViewController.swift */,
 				5C1075FB275D7B080033A86A /* CourseDetailViewController.swift */,
+				5C107609275E07F60033A86A /* CourseReviewTableViewCell.swift */,
 				5C107603275DEC120033A86A /* ReviewTableViewController.swift */,
 				5C1075F9275D78B70033A86A /* CourseTableViewCell.swift */,
 				5C1075FF275D9C9B0033A86A /* UIViewController+alert.swift */,
+				5C10760D275E16000033A86A /* UIView+addBorder.swift */,
+				5C10760B275E15A50033A86A /* UIBarButtonItem+hide.swift */,
 				5C1075E7275D726D0033A86A /* Main.storyboard */,
 				5C1075EA275D726F0033A86A /* Assets.xcassets */,
 				5C1075EC275D726F0033A86A /* LaunchScreen.storyboard */,
@@ -259,7 +268,9 @@
 				5C1075F8275D77700033A86A /* CourseListViewController.swift in Sources */,
 				5C1075E2275D726D0033A86A /* AppDelegate.swift in Sources */,
 				5C1075E4275D726D0033A86A /* SceneDelegate.swift in Sources */,
+				5C10760C275E15A50033A86A /* UIBarButtonItem+hide.swift in Sources */,
 				5C1075FC275D7B080033A86A /* CourseDetailViewController.swift in Sources */,
+				5C10760A275E07F60033A86A /* CourseReviewTableViewCell.swift in Sources */,
 				5C1075FE275D95370033A86A /* Course.swift in Sources */,
 				5C107606275DF8AA0033A86A /* Review.swift in Sources */,
 				5C1075FA275D78B70033A86A /* CourseTableViewCell.swift in Sources */,
@@ -267,6 +278,7 @@
 				5C107608275DFA3D0033A86A /* Reviews.swift in Sources */,
 				5C107600275D9C9C0033A86A /* UIViewController+alert.swift in Sources */,
 				5C107602275D9E390033A86A /* Courses.swift in Sources */,
+				5C10760E275E16000033A86A /* UIView+addBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
