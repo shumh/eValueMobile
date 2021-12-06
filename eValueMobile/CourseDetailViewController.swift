@@ -49,6 +49,10 @@ class CourseDetailViewController: UIViewController {
         professorTextField.borderStyle = .none
     }
     
+    @IBAction func courseIDTextFieldChanged(_ sender: UITextField) {
+        sender.text = sender.text?.uppercased().trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

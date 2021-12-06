@@ -34,7 +34,6 @@ class CourseListViewController: UIViewController {
     }
     
     @IBAction func sortSegmentPressed(_ sender: UISegmentedControl) {
-        print("helloooooo")
         self.sortBasedOnSegmentPressed()
     }
     
