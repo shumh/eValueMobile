@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
         super.viewDidAppear(animated)
         signIn()
     }
+    
 
     func signIn() {
         // note FUIGoogleAuth line was previously: FUIGoogleAuth(), Google changed to line below in latest update

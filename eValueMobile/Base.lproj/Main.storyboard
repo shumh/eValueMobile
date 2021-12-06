@@ -94,6 +94,21 @@
                             <constraint firstItem="tac-tk-zeJ" firstAttribute="trailing" secondItem="hwC-F6-4h3" secondAttribute="trailing" id="d6H-Nd-uob"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" id="wI1-ER-3Kp">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="wGL-9h-ncf">
+                                <rect key="frame" x="20" y="11" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <segments>
+                                    <segment title="Sort by CourseID"/>
+                                    <segment title="Sort by Course Name"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="Xtc-v0-fBE">
                         <barButtonItem key="leftBarButtonItem" title="Sign Out" id="VDK-WM-iGG">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,7 +123,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
+                        <outlet property="sortSegmentedControl" destination="wGL-9h-ncf" id="VCV-Hg-3IR"/>
                         <outlet property="tableView" destination="hwC-F6-4h3" id="NEX-Dm-Sgf"/>
                     </connections>
                 </viewController>
@@ -302,7 +319,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zF4-Lc-krN"/>
+        <segue reference="FZw-Xq-CLq"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="PrimaryColor">
