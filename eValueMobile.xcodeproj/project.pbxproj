@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		5C1075E2275D726D0033A86A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075E1275D726D0033A86A /* AppDelegate.swift */; };
 		5C1075E4275D726D0033A86A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075E3275D726D0033A86A /* SceneDelegate.swift */; };
-		5C1075E6275D726D0033A86A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075E5275D726D0033A86A /* ViewController.swift */; };
+		5C1075E6275D726D0033A86A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075E5275D726D0033A86A /* LoginViewController.swift */; };
 		5C1075E9275D726D0033A86A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1075E7275D726D0033A86A /* Main.storyboard */; };
 		5C1075EB275D726F0033A86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C1075EA275D726F0033A86A /* Assets.xcassets */; };
 		5C1075EE275D726F0033A86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1075EC275D726F0033A86A /* LaunchScreen.storyboard */; };
+		5C1075F6275D73970033A86A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C1075F5275D73970033A86A /* GoogleService-Info.plist */; };
+		5C1075F8275D77700033A86A /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075F7275D77700033A86A /* CourseListViewController.swift */; };
+		5C1075FA275D78B70033A86A /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075F9275D78B70033A86A /* CourseTableViewCell.swift */; };
+		5C1075FC275D7B080033A86A /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075FB275D7B080033A86A /* CourseDetailViewController.swift */; };
+		5C1075FE275D95370033A86A /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075FD275D95370033A86A /* Course.swift */; };
+		5C107600275D9C9C0033A86A /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1075FF275D9C9B0033A86A /* UIViewController+alert.swift */; };
+		5C107602275D9E390033A86A /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C107601275D9E390033A86A /* Courses.swift */; };
+		BC655428C8892F3AF367F8B9 /* Pods_eValueMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAAC87281755762D812BB5A /* Pods_eValueMobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C1075DE275D726D0033A86A /* eValueMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eValueMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1075E1275D726D0033A86A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C1075E3275D726D0033A86A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C1075E5275D726D0033A86A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C1075E5275D726D0033A86A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C1075E8275D726D0033A86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C1075EA275D726F0033A86A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C1075ED275D726F0033A86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C1075EF275D726F0033A86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1075F5275D73970033A86A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C1075F7275D77700033A86A /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
+		5C1075F9275D78B70033A86A /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		5C1075FB275D7B080033A86A /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		5C1075FD275D95370033A86A /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		5C1075FF275D9C9B0033A86A /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		5C107601275D9E390033A86A /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		7B4D0AB13E87F2DD789A7CA6 /* Pods-eValueMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eValueMobile.release.xcconfig"; path = "Target Support Files/Pods-eValueMobile/Pods-eValueMobile.release.xcconfig"; sourceTree = "<group>"; };
+		ACAAC87281755762D812BB5A /* Pods_eValueMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eValueMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8FB147A3EB6C270C7CCBCF /* Pods-eValueMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eValueMobile.debug.xcconfig"; path = "Target Support Files/Pods-eValueMobile/Pods-eValueMobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC655428C8892F3AF367F8B9 /* Pods_eValueMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				5C1075E0275D726D0033A86A /* eValueMobile */,
 				5C1075DF275D726D0033A86A /* Products */,
+				D8056278686759CFDBD85674 /* Pods */,
+				6819B2C038EDCCA476FFDB66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +78,38 @@
 			isa = PBXGroup;
 			children = (
 				5C1075E1275D726D0033A86A /* AppDelegate.swift */,
+				5C1075FD275D95370033A86A /* Course.swift */,
+				5C107601275D9E390033A86A /* Courses.swift */,
 				5C1075E3275D726D0033A86A /* SceneDelegate.swift */,
-				5C1075E5275D726D0033A86A /* ViewController.swift */,
+				5C1075E5275D726D0033A86A /* LoginViewController.swift */,
+				5C1075F7275D77700033A86A /* CourseListViewController.swift */,
+				5C1075FB275D7B080033A86A /* CourseDetailViewController.swift */,
+				5C1075F9275D78B70033A86A /* CourseTableViewCell.swift */,
+				5C1075FF275D9C9B0033A86A /* UIViewController+alert.swift */,
 				5C1075E7275D726D0033A86A /* Main.storyboard */,
 				5C1075EA275D726F0033A86A /* Assets.xcassets */,
 				5C1075EC275D726F0033A86A /* LaunchScreen.storyboard */,
 				5C1075EF275D726F0033A86A /* Info.plist */,
+				5C1075F5275D73970033A86A /* GoogleService-Info.plist */,
 			);
 			path = eValueMobile;
+			sourceTree = "<group>";
+		};
+		6819B2C038EDCCA476FFDB66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACAAC87281755762D812BB5A /* Pods_eValueMobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8056278686759CFDBD85674 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA8FB147A3EB6C270C7CCBCF /* Pods-eValueMobile.debug.xcconfig */,
+				7B4D0AB13E87F2DD789A7CA6 /* Pods-eValueMobile.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C1075F2275D726F0033A86A /* Build configuration list for PBXNativeTarget "eValueMobile" */;
 			buildPhases = (
+				262E48620644A394D7D9B9B8 /* [CP] Check Pods Manifest.lock */,
 				5C1075DA275D726D0033A86A /* Sources */,
 				5C1075DB275D726D0033A86A /* Frameworks */,
 				5C1075DC275D726D0033A86A /* Resources */,
+				A8FF50340D49872C18A1350A /* [CP] Embed Pods Frameworks */,
+				00C3FF4249AD391E775D16A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1075EE275D726F0033A86A /* LaunchScreen.storyboard in Resources */,
+				5C1075F6275D73970033A86A /* GoogleService-Info.plist in Resources */,
 				5C1075EB275D726F0033A86A /* Assets.xcassets in Resources */,
 				5C1075E9275D726D0033A86A /* Main.storyboard in Resources */,
 			);
@@ -133,14 +182,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00C3FF4249AD391E775D16A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eValueMobile/Pods-eValueMobile-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eValueMobile/Pods-eValueMobile-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eValueMobile/Pods-eValueMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		262E48620644A394D7D9B9B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eValueMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8FF50340D49872C18A1350A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eValueMobile/Pods-eValueMobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eValueMobile/Pods-eValueMobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eValueMobile/Pods-eValueMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C1075DA275D726D0033A86A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1075E6275D726D0033A86A /* ViewController.swift in Sources */,
+				5C1075E6275D726D0033A86A /* LoginViewController.swift in Sources */,
+				5C1075F8275D77700033A86A /* CourseListViewController.swift in Sources */,
 				5C1075E2275D726D0033A86A /* AppDelegate.swift in Sources */,
 				5C1075E4275D726D0033A86A /* SceneDelegate.swift in Sources */,
+				5C1075FC275D7B080033A86A /* CourseDetailViewController.swift in Sources */,
+				5C1075FE275D95370033A86A /* Course.swift in Sources */,
+				5C1075FA275D78B70033A86A /* CourseTableViewCell.swift in Sources */,
+				5C107600275D9C9C0033A86A /* UIViewController+alert.swift in Sources */,
+				5C107602275D9E390033A86A /* Courses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +398,7 @@
 		};
 		5C1075F3275D726F0033A86A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8FB147A3EB6C270C7CCBCF /* Pods-eValueMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +427,7 @@
 		};
 		5C1075F4275D726F0033A86A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4D0AB13E87F2DD789A7CA6 /* Pods-eValueMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
