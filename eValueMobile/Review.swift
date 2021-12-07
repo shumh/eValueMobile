@@ -89,9 +89,7 @@ class Review {
                 completion(false)
             } else {
                 print("Successfully deleted document \(self.documentID)")
-//                course.updateAverageRating {
-//                    completion(true)
-//                }
+                completion(true)
                 
             }
         }
