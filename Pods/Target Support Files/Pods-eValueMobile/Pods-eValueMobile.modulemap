@@ -1,0 +1,6 @@
+framework module Pods_eValueMobile {
+  umbrella header "Pods-eValueMobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
