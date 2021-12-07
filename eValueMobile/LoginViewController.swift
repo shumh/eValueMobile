@@ -2,8 +2,7 @@
 //  LoginViewController.swift
 //  eValueMobile
 //
-//  Created by Richard Shum on 12/5/21.
-//
+
 
 import UIKit
 // Note: was previously import FirebaseUI, Google replaced in latest SDK with two lines below.

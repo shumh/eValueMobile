@@ -2,7 +2,6 @@
 //  Review.swift
 //  eValueMobile
 //
-//  Created by Richard Shum on 12/6/21.
 //
 
 import Foundation

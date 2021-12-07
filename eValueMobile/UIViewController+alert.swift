@@ -2,8 +2,7 @@
 //  UIViewController+alert.swift
 //  ToDo List
 //
-//  Created by Richard Shum on 10/4/21.
-//
+
 
 import UIKit
 
